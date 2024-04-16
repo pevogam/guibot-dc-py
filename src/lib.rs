@@ -20,3 +20,12 @@ mod internal;
 pub mod key;
 pub mod mouse;
 pub mod screen;
+
+use pyo3::prelude::*;
+
+// ⚠  Warning: Couldn't find the symbol `PyInit_autopy` in the native library. Python will fail to import this module. If you're using pyo3, check that `#[pymodule]` uses `autopy` as module name
+#[pymodule]
+fn autopy(_py: Python, m: &PyModule) -> PyResult<()> {
+    /* ... */
+    Ok(())
+}

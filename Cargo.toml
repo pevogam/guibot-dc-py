@@ -15,6 +15,8 @@ version = "0.4.0"
 [dependencies.pyo3]
 version = "0.8.1"
 default-features = false
+# ⚠ Warning: Failed to set rpath for /g8/5.programs/6.libraries/guibot-dc/guibot-dc-py/target/debug/libautopy.so: Failed to execute 'patchelf', did you install it? Hint: Try `pip install maturin[patchelf]` (or just `pip install patchelf`)
+features = ["extension-module"]
 
 [dependencies.image]
 version = "0.22.4"
