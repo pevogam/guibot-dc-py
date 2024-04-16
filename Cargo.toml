@@ -2,6 +2,7 @@
 #name = "autopy"
 name = "guibotdcpy"
 version = "0.1.0"
+edition = "2021"
 authors = ["Michael Sanders <crates@michaelsande.rs>", "Plamen Dimitrov <plamen.dimitrov@intra2net.com>"]
 
 [lib]
@@ -11,12 +12,12 @@ name = "autopy"
 
 [dependencies.autopilot]
 version = "0.4.0"
+path = ".."
 
 [dependencies.pyo3]
-version = "0.8.1"
-default-features = false
-# ⚠ Warning: Failed to set rpath for /g8/5.programs/6.libraries/guibot-dc/guibot-dc-py/target/debug/libautopy.so: Failed to execute 'patchelf', did you install it? Hint: Try `pip install maturin[patchelf]` (or just `pip install patchelf`)
-features = ["extension-module"]
+version = "0.23.5"
+#default-features = false
+#features = ["extension-module", "macros"]
 
 [dependencies.image]
 version = "0.22.4"
