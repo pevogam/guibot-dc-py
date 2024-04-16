@@ -1,8 +1,9 @@
 [package]
-name = "autopy"
+#name = "autopy"
+name = "guibotdcpy"
 version = "0.1.0"
 edition = "2021"
-authors = ["Michael Sanders <crates@michaelsande.rs>"]
+authors = ["Michael Sanders <crates@michaelsande.rs>", "Plamen Dimitrov <plamen.dimitrov@intra2net.com>"]
 
 [lib]
 ## Python extension modules should be compiled as 'cdylib'
